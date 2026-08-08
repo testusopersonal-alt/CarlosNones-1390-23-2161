@@ -1,0 +1,144 @@
+/* Paleta de colores del sitio (consistente en las 5 paginas) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+    margin: 0;
+}
+
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f1c40f;
+}
+
+main {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+figure {
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #dddddd;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+
+aside {
+    background-color: #eaf2f8;
+    border-left: 4px solid #2c3e50;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+
+form {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-top: 15px;
+    max-width: 400px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type=text],
+form input[type=email],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+form input:focus,
+form textarea:focus {
+    border-color: #2c3e50;
+    outline: none;
+    background-color: #f0f8ff;
+}
+
+form input[type=submit] {
+    margin-top: 15px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+form input[type=submit]:hover {
+    background-color: #1a252f;
+}
+
+
+form input:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+#form-contacto {
+    border: 2px solid #2c3e50;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #c3e6cb;
+}
