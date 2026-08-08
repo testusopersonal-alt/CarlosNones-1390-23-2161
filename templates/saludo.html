@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Hola, {{ nombre }}!</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Volver al inicio</a>
+    </nav>
+</header>
+
+</body>
+</html>

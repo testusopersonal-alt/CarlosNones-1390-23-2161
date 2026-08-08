@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Pagina 3 - Contacto</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Inicio</a>
+        <a href="{{ url_for('pagina1') }}">Pagina 1</a>
+        <a href="{{ url_for('pagina2') }}">Pagina 2</a>
+        <a href="{{ url_for('pagina3') }}">Pagina 3</a>
+        <a href="{{ url_for('pagina4') }}">Pagina 4</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <section>
+            <h2>Formulario de contacto</h2>
+
+            {% if resultado %}
+                <p class="mensaje-exito">{{ resultado }}</p>
+            {% endif %}
+
+            <form id="form-contacto" method="POST" action="{{ url_for('pagina3') }}">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </article>
+</main>
+
+</body>
+</html>

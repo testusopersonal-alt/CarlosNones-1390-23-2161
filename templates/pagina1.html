@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Pagina 1</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Inicio</a>
+        <a href="{{ url_for('pagina1') }}">Pagina 1</a>
+        <a href="{{ url_for('pagina2') }}">Pagina 2</a>
+        <a href="{{ url_for('pagina3') }}">Pagina 3</a>
+        <a href="{{ url_for('pagina4') }}">Pagina 4</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>Sobre este proyecto</h2>
+        <section>
+            <p>Esta pagina muestra el uso de etiquetas semanticas y una tabla.</p>
+        </section>
+    </article>
+
+    <h2>Tabla de contenidos vistos</h2>
+    <table>
+        <tr>
+            <th>Tema</th>
+            <th>Descripcion</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Estructura de la pagina</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Estilos y diseño</td>
+        </tr>
+        <tr>
+            <td>Flask</td>
+            <td>Backend con Python</td>
+        </tr>
+    </table>
+</main>
+
+</body>
+</html>

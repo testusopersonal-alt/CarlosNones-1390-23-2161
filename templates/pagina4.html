@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Pagina 4</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Inicio</a>
+        <a href="{{ url_for('pagina1') }}">Pagina 1</a>
+        <a href="{{ url_for('pagina2') }}">Pagina 2</a>
+        <a href="{{ url_for('pagina3') }}">Pagina 3</a>
+        <a href="{{ url_for('pagina4') }}">Pagina 4</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Conclusiones del curso</h2>
+        <p>Aprendimos HTML, CSS y Flask para crear paginas web dinamicas.</p>
+    </section>
+
+    <aside>
+        <h3>Nota</h3>
+        <p>Este proyecto integra todo lo visto en el curso.</p>
+    </aside>
+
+    <h2>Resumen</h2>
+    <table>
+        <tr>
+            <th>Semana</th>
+            <th>Tema</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Flask</td>
+        </tr>
+    </table>
+</main>
+
+</body>
+</html>

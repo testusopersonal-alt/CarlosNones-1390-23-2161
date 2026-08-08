@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Pagina 2</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Inicio</a>
+        <a href="{{ url_for('pagina1') }}">Pagina 1</a>
+        <a href="{{ url_for('pagina2') }}">Pagina 2</a>
+        <a href="{{ url_for('pagina3') }}">Pagina 3</a>
+        <a href="{{ url_for('pagina4') }}">Pagina 4</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>Herramientas usadas</h2>
+        <p>Este proyecto se hizo con VS Code, Git y GitHub.</p>
+    </article>
+
+    <aside>
+        <h3>Dato extra</h3>
+        <p>Flask es un microframework de Python para crear aplicaciones web.</p>
+    </aside>
+
+    <h2>Tecnologias</h2>
+    <table>
+        <tr>
+            <th>Herramienta</th>
+            <th>Uso</th>
+        </tr>
+        <tr>
+            <td>VS Code</td>
+            <td>Editor de codigo</td>
+        </tr>
+        <tr>
+            <td>Git</td>
+            <td>Control de versiones</td>
+        </tr>
+    </table>
+</main>
+
+</body>
+</html>
