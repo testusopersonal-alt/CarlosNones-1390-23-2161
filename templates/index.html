@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+
+<header>
+    <figure>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo del sitio" width="80">
+        <figcaption>Mi Proyecto Web</figcaption>
+    </figure>
+    <h1>Bienvenido a la pagina de inicio</h1>
+
+    <nav>
+        <a href="{{ url_for('index') }}">Inicio</a>
+        <a href="{{ url_for('pagina1') }}">Pagina 1</a>
+        <a href="{{ url_for('pagina2') }}">Pagina 2</a>
+        <a href="{{ url_for('pagina3') }}">Pagina 3</a>
+        <a href="{{ url_for('pagina4') }}">Pagina 4</a>
+    </nav>
+</header>
+
+<main>
+    <p>Este es el proyecto final del curso, hecho con Flask, HTML y CSS.</p>
+
+    <h2>Contenido del curso</h2>
+    <ul>
+        <li>HTML
+            <ul>
+                <li>Estructura basica</li>
+                <li>Etiquetas semanticas</li>
+            </ul>
+        </li>
+        <li>CSS
+            <ul>
+                <li>Selectores</li>
+                <li>Box Model</li>
+            </ul>
+        </li>
+        <li>Flask
+            <ul>
+                <li>Rutas</li>
+                <li>Jinja2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Prueba la ruta dinamica: <a href="{{ url_for('saludo', nombre='Carlos') }}">Ver saludo personalizado</a></p>
+</main>
+
+</body>
+</html>
